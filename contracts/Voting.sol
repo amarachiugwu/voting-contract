@@ -94,6 +94,7 @@ contract Voting {
         voter.vote = candidateId;
         candidates[candidateId].voteCount += voter.weight;
     }
+    
 
     function winningCandidate() public view returns(uint winningId)  {
         uint count = 0;
